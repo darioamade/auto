@@ -41,3 +41,72 @@ body{
     font-style: normal;
     margin: 0 auto;
 }
+
+
+//********************** NAV******************************//
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 8rem;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.481);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 1.5rem;
+  }
+  
+  .logo {
+    width: 10rem;
+    height: 4rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+  
+  }
+  
+   a {
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  a:hover { 
+    text-decoration: none; 
+  } 
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'monument extended';
+    color: #ddd9d9;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+  }
+  
+  .icon-box-x {
+    fill: #fff;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+  
