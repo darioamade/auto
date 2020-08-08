@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #F58A07;
+  --color-primary: #f58a07;
   --color-black: #001011;
-  --color-blue: #0267C1;
-  --color-mint-cream: #F7FFF6;
-  --color-grey: #FBFFFE;
+  --color-blue: #0267c1;
+  --color-mint-cream: #f7fff6;
+  --color-grey: #fbfffe;
   --color-grey-light-1: #f2f2f2;
   --color-grey-light-2: #bfbfbf;
   --color-grey-light-3: #8c8c8c;
@@ -45,28 +45,78 @@ body {
 nav {
   position: fixed;
   width: 100vw;
-  height: 8rem;
+  height: 20rem;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.481);
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 0 2rem;
+}
+
+hr {
+  width: 90vw;
+  margin: 0 auto;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.399);
+}
+
+.logo-area {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  width: 100vw;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem 1.5rem;
+}
+
+.logo-area h3 {
+  color: white;
 }
 
 .logo {
-  width: 10rem;
-  height: 4rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+.logo-sub {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem;
 }
 
 .nav-links {
@@ -110,7 +160,7 @@ li {
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 1px;
-  font-family: 'monument extended';
+  font-family: "monument extended";
   color: #ddd9d9;
   font-size: 1.2rem;
   font-weight: 100;
@@ -123,5 +173,15 @@ li {
   width: 2rem;
   height: 2rem;
   margin-left: 1rem;
+}
+
+.hero {
+  background-image: url(/css/img/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
