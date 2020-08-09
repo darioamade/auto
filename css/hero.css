@@ -65,7 +65,6 @@ header {
   right: 0;
   padding-bottom: 5rem;
   cursor: pointer;
-  border: 1px solid #fff;
 }
 
 .container-title-sub {
@@ -75,7 +74,6 @@ header {
   right: 0;
   padding-bottom: 5rem;
   cursor: pointer;
-  border: 1px solid #fff;
 }
 
 .container-title-sub h1 {
@@ -350,10 +348,81 @@ section {
 /*--------------best css effect backgrou-att-fixed----------------------*/
 /*----------------SECTION MODELS-------------------*/
 .models {
-  padding: 2rem 4rem;
+  padding: 10rem 4rem;
   background-color: #fff;
-  height: 100vh;
   width: 100vw;
+  max-width: 1680px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.models-content-top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  background-color: red;
+}
+
+.models-content-down {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  width: 100%;
+  height: 100%;
+  background-color: yellowgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.models-content-down-left {
+  background-color: brown;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+@media (max-width: 1280px) {
+  .models-content-down-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
+  }
+}
+
+.models-content-down-right {
+  background-color: blue;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+@media (max-width: 1280px) {
+  .models-content-down-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .models-content-down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /****************************************************************/
