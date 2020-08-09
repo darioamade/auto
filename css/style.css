@@ -66,8 +66,8 @@ hr {
   margin: 0 auto;
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.399);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.399);
 }
 
 .logo-area {
@@ -88,6 +88,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 .logo-area h6 {
@@ -107,6 +108,8 @@ hr {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 90vw;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +123,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 4rem;
+  margin-top: 1rem;
 }
 
 .nav-links {

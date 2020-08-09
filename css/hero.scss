@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/aaa4ajt.css");
 @import url("/css/style.css");
+@import url("https://use.typekit.net/dno4axc.css");
 :root {
   --section-rotate: 9vw;
 }
@@ -46,12 +47,12 @@ header {
 
 .carousel-indicators li {
   width: 60px;
-  background-color: #57cdf5;
+  // background-color: #57cdf5;
 }
 
 //******************** Carousel ***************/
 .carousel-item {
-  height: 85vh;
+  height: 90vh;
   width: 100vw;
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -67,6 +68,37 @@ header {
   right: 0;
   padding-bottom: 5rem;
   cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.container-title-sub {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  padding-bottom: 5rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+
+    font-family: corporate-s-std-urw, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
+    font-size: 4.5rem;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: initial;
+  }
 }
 
 .overlay-image {

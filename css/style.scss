@@ -61,8 +61,8 @@ hr {
   margin: 0 auto;
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.399);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.399);
 }
 
 .logo-area {
@@ -72,6 +72,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   h6 {
     font-family: "Playfair Display", serif;
     color: rgb(216, 215, 215);
@@ -88,11 +89,13 @@ hr {
 
 .logo-sub {
   flex: 1;
+  width: 90vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  margin-top: 1rem;
 }
 
 .nav-links {
