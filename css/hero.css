@@ -33,8 +33,9 @@ html {
 body {
   background-color: #fff;
   line-height: 1.6;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif;
+  font-family: corporate-s-std-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #777;
   margin: 0 auto;
 }
@@ -342,7 +343,12 @@ section {
 }
 
 /*--------------best css effect backgrou-att-fixed----------------------*/
-/*----------------LINKS-------------------*/
+/*----------------SECTION MODELS-------------------*/
+.models {
+  padding: 2rem 4rem;
+  background-color: #fff;
+}
+
 /****************************************************************/
 /**************************  header **************************/
 /******************************** FOOTER ********************************/
