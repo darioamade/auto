@@ -1,0 +1,480 @@
+@import url("https://use.typekit.net/aaa4ajt.css");
+:root {
+  --section-rotate: 9vw;
+}
+
+::-moz-selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  color: #777;
+  margin: 0 auto;
+}
+/**********************PRELOADER**************************/
+.preload {
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("/img/pexels-jordan-hyde-1383834.jpg") center/cover no-repeat;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  padding: 6rem;
+  overflow: hidden;
+  transition: all 7s ease-in-out;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.heading-preload {
+  font-family: rig-solid-bold-fill, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1.5;
+
+}
+
+/******************************* Carousel-item  *********************************/
+
+header {
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 8rem;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.481);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: .5rem 1.5rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+
+}
+
+ a {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover { 
+  text-decoration: none; 
+} 
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'monument extended';
+  color: #ddd9d9;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+
+.icon-box-x {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.carousel-item {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 5rem;
+  cursor: pointer;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  background-position: center;
+  background-size: cover;
+}
+
+.dotm {
+  display: block;
+  background: url(https://media.giphy.com/media/5l3lJzA8zVMqc/giphy.gif) no-repeat;
+  /* change with the image URL */
+  background-size: cover;
+}
+
+.dotm-overlay {
+  background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+  width: 100%;
+  height: 70vh;
+  /*height of the image*/
+}
+
+/*----------------------------------------*/
+
+/*REUSABLE COMPONENTS*/
+
+/*----------------------------------------*/
+
+.row {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0px
+}
+
+.box {
+  padding: 1%;
+}
+
+/*----------------------------------------*/
+
+/*---------PARAGRAPHS------------------------*/
+
+/*----------------------------------------*/
+
+.ma-bt-md {
+  margin-bottom: 3rem;
+}
+
+.ma-bt-lg {
+  margin-bottom: 3.5rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.line {
+  margin: 6rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+/****************************************************************/
+
+/**************************   Headings **************************/
+
+/****************************************************************/
+
+.heading-secondary {
+  font-size: 2.25rem;
+  font-family: 'monument extended';
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  display: inline-block;
+  margin: 1.5rem 0;
+}
+
+.heading-primary, .heading-tertiary {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.heading-primary span, .heading-tertiary span {
+  padding: 1rem 1.5rem;
+  line-height: 1;
+}
+
+#color {
+  color: #000;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  font-family: 'monument extended';
+  text-align: center;
+  margin: 0 auto;
+}
+
+#text-align {
+  text-align: start;
+}
+
+.heading-tertiary {
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: 'monument extended';
+}
+
+.btn, .btn:link, .btn:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*Add later when we use this for the button in form*/
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn--green {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.btn--orange {
+  background-color: #FBBF0A;
+  color: #fff;
+}
+
+.btn--green::after {
+  background-color: #ffffff;
+}
+
+.btn--small {
+  padding: 1.25rem 3rem !important;
+  font-size: 1.4rem !important;
+}
+
+.btn-small, .btn-small:link, .btn-small:visited {
+  background-color: #fefefe;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.25rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  border: none;
+}
+
+.btn-small:hover {
+  background-color: #000;
+}
+
+.btn-text:link, .btn-text:visited {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#btn-color1 {
+  background-color: #FBBF0A;
+}
+
+.btn-text:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-text:focus {
+  outline: none;
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+/*--------------best css effect backgrou-att-fixed----------------------*/
+
+/*----------------LINKS-------------------*/
+
+/****************************************************************/
+
+/**************************  header **************************/
+
+/******************************** FOOTER ********************************/
+
+footer {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer {
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hr {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #ddd9d9;
+}
+
+.nav-footer-1 {
+  flex: 1;
+  width: 100%;
+  padding:  2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-footer-1 p {
+  width: 65%;
+  text-align: center;
+  font-weight: 300;
+  color: #ddd9d9;
+  margin-bottom: 5rem;
+}
+
+.nav-footer li {
+  font-family: 'monument extended';
+  color: #ddd9d9;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 12rem;
+}
+
+#copy {
+  margin-top: 4rem;
+}
