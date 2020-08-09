@@ -46,7 +46,7 @@ body {
 nav {
   position: fixed;
   width: 100vw;
-  height: 15rem;
+  height: 18rem;
   z-index: 2;
   background-color: black;
   display: -webkit-box;
