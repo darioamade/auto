@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/aaa4ajt.css");
+@import url("/css/style.css");
 :root {
   --section-rotate: 9vw;
 }
@@ -13,7 +14,9 @@
   color: #fff;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
@@ -30,43 +33,9 @@ body {
   background-color: #fff;
   line-height: 1.6;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #777;
   margin: 0 auto;
-}
-/**********************PRELOADER**************************/
-.preload {
-  background-color: rgb(0, 0, 0);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("/img/pexels-jordan-hyde-1383834.jpg") center/cover no-repeat;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 1000;
-  padding: 6rem;
-  overflow: hidden;
-  transition: all 7s ease-in-out;
-}
-
-.preload-finish {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.heading-preload {
-  font-family: rig-solid-bold-fill, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 12.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  line-height: 1.5;
-
 }
 
 /******************************* Carousel-item  *********************************/
@@ -75,74 +44,14 @@ header {
   position: relative;
 }
 
-nav {
-  position: fixed;
-  width: 100vw;
-  height: 8rem;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.481);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: .5rem 1.5rem;
+.carousel-indicators li {
+  width: 60px;
+  background-color: #57cdf5;
 }
 
-.logo {
-  width: 10rem;
-  height: 4rem;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-
-}
-
- a {
-  list-style: none;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-a:hover { 
-  text-decoration: none; 
-} 
-
-ul {
-  list-style: none;
-}
-
-li {
-  text-decoration: none;
-  margin-right: 2rem;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-family: 'monument extended';
-  color: #ddd9d9;
-  font-size: 1.2rem;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-}
-
-.icon-box-x {
-  fill: #fff;
-  width: 2rem;
-  height: 2rem;
-  margin-left: 1rem;
-}
-
+//******************** Carousel ***************/
 .carousel-item {
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -173,7 +82,8 @@ li {
 
 .dotm {
   display: block;
-  background: url(https://media.giphy.com/media/5l3lJzA8zVMqc/giphy.gif) no-repeat;
+  background: url(https://media.giphy.com/media/5l3lJzA8zVMqc/giphy.gif)
+    no-repeat;
   /* change with the image URL */
   background-size: cover;
 }
@@ -197,7 +107,7 @@ li {
 }
 
 section {
-  padding: 80px 0px
+  padding: 80px 0px;
 }
 
 .box {
@@ -237,7 +147,7 @@ section {
 
 .heading-secondary {
   font-size: 2.25rem;
-  font-family: 'monument extended';
+  font-family: "monument extended";
   text-transform: uppercase;
   font-weight: 500;
   color: #fff;
@@ -247,19 +157,8 @@ section {
   margin-bottom: 1.5rem;
 }
 
-p {
-  font-size: 1.25rem;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.1rem;
-  line-height: 1.6;
-  display: inline-block;
-  margin: 1.5rem 0;
-}
-
-.heading-primary, .heading-tertiary {
+.heading-primary,
+.heading-tertiary {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
@@ -267,7 +166,8 @@ p {
   margin-bottom: 2rem;
 }
 
-.heading-primary span, .heading-tertiary span {
+.heading-primary span,
+.heading-tertiary span {
   padding: 1rem 1.5rem;
   line-height: 1;
 }
@@ -278,7 +178,7 @@ p {
 
 .heading-primary {
   font-size: 3rem;
-  font-family: 'monument extended';
+  font-family: "monument extended";
   text-align: center;
   margin: 0 auto;
 }
@@ -290,10 +190,12 @@ p {
 .heading-tertiary {
   font-size: 1.75rem;
   text-align: center;
-  font-family: 'monument extended';
+  font-family: "monument extended";
 }
 
-.btn, .btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   font-size: 1.6rem;
   padding: 1.4rem 3rem;
   border-radius: 10rem;
@@ -341,7 +243,7 @@ p {
 }
 
 .btn--orange {
-  background-color: #FBBF0A;
+  background-color: #fbbf0a;
   color: #fff;
 }
 
@@ -354,7 +256,9 @@ p {
   font-size: 1.4rem !important;
 }
 
-.btn-small, .btn-small:link, .btn-small:visited {
+.btn-small,
+.btn-small:link,
+.btn-small:visited {
   background-color: #fefefe;
   color: #fff;
   font-size: 1.4rem;
@@ -374,7 +278,8 @@ p {
   background-color: #000;
 }
 
-.btn-text:link, .btn-text:visited {
+.btn-text:link,
+.btn-text:visited {
   color: #000;
   display: inline-block;
   text-decoration: none;
@@ -385,7 +290,7 @@ p {
 }
 
 #btn-color1 {
-  background-color: #FBBF0A;
+  background-color: #fbbf0a;
 }
 
 .btn-text:hover {
@@ -421,7 +326,17 @@ p {
 /******************************** FOOTER ********************************/
 
 footer {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,16 +356,10 @@ footer {
   align-items: center;
 }
 
-hr {
-  width: 90vw;
-  margin: 0 auto;
-  background-color: #ddd9d9;
-}
-
 .nav-footer-1 {
   flex: 1;
   width: 100%;
-  padding:  2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,7 +375,7 @@ hr {
 }
 
 .nav-footer li {
-  font-family: 'monument extended';
+  font-family: "monument extended";
   color: #ddd9d9;
   font-size: 1.2rem;
   font-weight: 100;
