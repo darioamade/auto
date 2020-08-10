@@ -171,6 +171,19 @@ section {
   background-color: #e0e0e0;
 }
 
+h2 {
+  font-family: Corporate A Pro Light, serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4.5rem;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-transform: initial;
+  @media (max-width: 1280px) {
+    font-size: 3rem;
+  }
+}
 /****************************************************************/
 
 /**************************   Headings **************************/
@@ -352,7 +365,8 @@ section {
 /*----------------SECTION MODELS-------------------*/
 .models {
   padding: 10rem 4rem;
-  background-color: #fff;
+  background-color: #f8f8f8;
+
   width: 100vw;
   max-width: 1680px;
   margin: 0 auto;
@@ -362,7 +376,39 @@ section {
   flex-direction: column;
   &-content-top {
     flex: 0 0 20%;
-    background-color: red;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 0rem;
+
+    border: 1px solid #ddd;
+    &-title {
+      flex: 1;
+    }
+    &-models {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+        height: 6rem;
+        text-align: center;
+        border: 1px solid rgb(40, 38, 38);
+        li a {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 
   &-content-down {
@@ -373,7 +419,9 @@ section {
     display: flex;
     flex-direction: row;
     &-left {
-      background-color: brown;
+      background-color: #f8f8f8;
+      background-color: red;
+
       flex: 0 0 20%;
       @media (max-width: 1280px) {
         flex: 0 0 10%;
@@ -393,6 +441,16 @@ section {
   }
 }
 
+.amg {
+  background: url("/css/img/logo/amg-1.png") center/cover no-repeat;
+  padding: 1rem;
+}
+
+.power {
+  background: url("/css/img/logo/cropped-mercedes-eq-logo_brand-780x405.jpg")
+    center/cover no-repeat;
+  padding: 1rem;
+}
 /****************************************************************/
 
 /**************************  header **************************/

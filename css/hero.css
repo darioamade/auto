@@ -172,6 +172,23 @@ section {
   background-color: #e0e0e0;
 }
 
+h2 {
+  font-family: Corporate A Pro Light, serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4.5rem;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-transform: initial;
+}
+
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 /****************************************************************/
 /**************************   Headings **************************/
 /****************************************************************/
@@ -349,7 +366,7 @@ section {
 /*----------------SECTION MODELS-------------------*/
 .models {
   padding: 10rem 4rem;
-  background-color: #fff;
+  background-color: #f8f8f8;
   width: 100vw;
   max-width: 1680px;
   margin: 0 auto;
@@ -367,7 +384,72 @@ section {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
-  background-color: red;
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.5rem 0rem;
+  border: 1px solid #ddd;
+}
+
+.models-content-top-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.models-content-top-models {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.models-content-top-models span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12rem;
+  height: 6rem;
+  text-align: center;
+  border: 1px solid #282626;
+}
+
+.models-content-top-models span li a {
+  font-size: 1rem;
 }
 
 .models-content-down {
@@ -387,7 +469,8 @@ section {
 }
 
 .models-content-down-left {
-  background-color: brown;
+  background-color: #f8f8f8;
+  background-color: red;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
@@ -423,6 +506,16 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.amg {
+  background: url("/css/img/logo/amg-1.png") center/cover no-repeat;
+  padding: 1rem;
+}
+
+.power {
+  background: url("/css/img/logo/cropped-mercedes-eq-logo_brand-780x405.jpg") center/cover no-repeat;
+  padding: 1rem;
 }
 
 /****************************************************************/
