@@ -30,7 +30,8 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background: #000;
+  background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
   line-height: 1.6;
   font-family: Corporate A Pro Light, serif;
   font-weight: 200;
@@ -43,6 +44,12 @@ body {
 
 header {
   position: relative;
+  width: 100vw;
+}
+
+.carousel {
+  max-width: 1695px;
+  margin: 0 auto;
 }
 
 .carousel-indicators li {
@@ -53,7 +60,7 @@ header {
 //******************** Carousel ***************/
 .carousel-item {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(0, 0, 0);
   color: #fff;
   position: relative;
@@ -84,9 +91,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
     text-align: center;
-
     font-family: Corporate A Pro Light, serif;
     font-weight: 200;
     font-style: normal;
@@ -132,19 +137,6 @@ header {
 /*REUSABLE COMPONENTS*/
 
 /*----------------------------------------*/
-
-.row {
-  max-width: 144rem;
-  margin: 0 auto;
-}
-
-section {
-  padding: 80px 0px;
-}
-
-.box {
-  padding: 1%;
-}
 
 /*----------------------------------------*/
 
@@ -368,12 +360,12 @@ h2 {
   background-color: #f8f8f8;
 
   width: 100vw;
-  max-width: 1680px;
+  max-width: 1695px;
   margin: 0 auto;
   height: 100vh;
-
-  display: flex;
   flex-direction: column;
+  display: flex;
+
   &-content-top {
     flex: 0 0 20%;
     background-color: #f8f8f8;
@@ -381,38 +373,11 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    position: relative;
     border: 1px solid #ddd;
     &-title {
       flex: 1;
-      padding: 1rem 0rem;
-    }
-    &-models {
-      flex: 1;
+      padding: 1rem;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-end;
-      position: relative;
-
-      span {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 12rem;
-        height: 6rem;
-        text-align: center;
-        border: 1px solid rgb(21, 21, 21);
-        & li {
-          background-color: rgba(0, 0, 0, 0);
-        }
-        li a {
-          font-size: 1rem;
-          background-color: rgba(0, 0, 0, 0);
-        }
-      }
     }
   }
 
@@ -420,14 +385,15 @@ h2 {
     flex: 0 0 80%;
     width: 100%;
     height: 100%;
-    background-color: yellowgreen;
     display: flex;
     flex-direction: row;
     &-left {
       background-color: #f8f8f8;
-      background-color: red;
-
       flex: 0 0 20%;
+      padding: 4rem 1rem;
+      width: 100%;
+      height: 100%;
+
       @media (max-width: 1280px) {
         flex: 0 0 10%;
       }
@@ -446,27 +412,113 @@ h2 {
   }
 }
 
-#allModels{
-  background-color: #262626;
-  border: 1px solid red;
-
+.car-list-icons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.power {
-  background: url("/css/img/logo/amg-1.png") center/cover no-repeat;
-  padding: 1rem;
-  cursor: pointer;
-  &:hover {
-    background-color: rgba(223, 218, 218, 0.803);
-  }
+.car-list-icon-one {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: initial;
+  color: #b5b2b2;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
-.amg {
-  background: url("/css/img/logo/cropped-mercedes-eq-logo_brand-780x405.jpg")
-    center/cover no-repeat;
-  padding: 1rem;
-  cursor: pointer;
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: button;
+  background-color: transparent;
+  color: #999999;
+}
 
+.btn-car-1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: button;
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.btn-car-1::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #b5b2b2;
+
+  width: 8rem;
+  top: -25%;
+  right: -20%;
+}
+
+.models-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40rem;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+}
+
+.models-links-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  width: 12.5rem;
+  height: 6rem;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(213, 210, 210);
+  background-color: rgb(255, 255, 255);
+}
+
+.models-links-item:hover {
+  background-color: rgb(182, 181, 181);
+  cursor: pointer;
+}
+#bgClr {
+  background-color: rgb(26, 26, 26);
+  cursor: default;
+}
+
+.models-content-top-models .models-links {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: normal;
+  text-transform: initial;
+  color: rgb(220, 215, 215);
+  list-style: none;
+  text-decoration: none;
+  cursor: inherit;
 }
 
 /****************************************************************/

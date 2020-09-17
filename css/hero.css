@@ -30,7 +30,8 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background: #000;
+  background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
   line-height: 1.6;
   font-family: Corporate A Pro Light, serif;
   font-weight: 200;
@@ -42,6 +43,12 @@ body {
 /******************************* Carousel-item  *********************************/
 header {
   position: relative;
+  width: 100vw;
+}
+
+.carousel {
+  max-width: 1695px;
+  margin: 0 auto;
 }
 
 .carousel-indicators li {
@@ -50,7 +57,7 @@ header {
 
 .carousel-item {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   color: #fff;
   position: relative;
@@ -91,7 +98,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
   text-align: center;
   font-family: Corporate A Pro Light, serif;
   font-weight: 200;
@@ -137,19 +143,6 @@ header {
 /*----------------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*----------------------------------------*/
-.row {
-  max-width: 144rem;
-  margin: 0 auto;
-}
-
-section {
-  padding: 80px 0px;
-}
-
-.box {
-  padding: 1%;
-}
-
 /*----------------------------------------*/
 /*---------PARAGRAPHS------------------------*/
 /*----------------------------------------*/
@@ -368,16 +361,16 @@ h2 {
   padding: 10rem 4rem;
   background-color: #f8f8f8;
   width: 100vw;
-  max-width: 1680px;
+  max-width: 1695px;
   margin: 0 auto;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .models-content-top {
@@ -398,7 +391,6 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: relative;
   border: 1px solid #ddd;
 }
 
@@ -406,57 +398,8 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 1rem 0rem;
-}
-
-.models-content-top-models {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  padding: 1rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
-}
-
-.models-content-top-models span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 12rem;
-  height: 6rem;
-  text-align: center;
-  border: 1px solid #151515;
-}
-
-.models-content-top-models span li {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.models-content-top-models span li a {
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .models-content-down {
@@ -465,7 +408,6 @@ h2 {
           flex: 0 0 80%;
   width: 100%;
   height: 100%;
-  background-color: yellowgreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,10 +419,12 @@ h2 {
 
 .models-content-down-left {
   background-color: #f8f8f8;
-  background-color: red;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
+  padding: 4rem 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1280px) {
@@ -515,25 +459,150 @@ h2 {
   }
 }
 
-#allModels {
-  background-color: #262626;
-  border: 1px solid red;
+.car-list-icons {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.power {
-  background: url("/css/img/logo/amg-1.png") center/cover no-repeat;
-  padding: 1rem;
+.car-list-icon-one {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: initial;
+  color: #b5b2b2;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: transparent;
+  color: #999999;
+}
+
+.btn-car-1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.btn-car-1::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #b5b2b2;
+  width: 8rem;
+  top: -25%;
+  right: -20%;
+}
+
+.models-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40rem;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+}
+
+.models-links-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  width: 12.5rem;
+  height: 6rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  border: 1px solid #d5d2d2;
+  background-color: white;
+}
+
+.models-links-item:hover {
+  background-color: #b6b5b5;
   cursor: pointer;
 }
 
-.power:hover {
-  background-color: rgba(223, 218, 218, 0.803);
+#bgClr {
+  background-color: #1a1a1a;
+  cursor: default;
 }
 
-.amg {
-  background: url("/css/img/logo/cropped-mercedes-eq-logo_brand-780x405.jpg") center/cover no-repeat;
-  padding: 1rem;
-  cursor: pointer;
+.models-content-top-models .models-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: normal;
+  text-transform: initial;
+  color: #dcd7d7;
+  list-style: none;
+  text-decoration: none;
+  cursor: inherit;
 }
 
 /****************************************************************/
